@@ -9,19 +9,20 @@ class BankAccount:
         amount = int(amount)
         self.balance += amount
         print(f"New Balance after Deposit: {self.balance}")
+        return self.balance
         
     def withdraw(self, amount):
         amount = int(amount)
         self.balance -= amount
         print(f"New Balance after Withdraw: {self.balance}")
+        return self.balance
 
     def add_interest(self, interest):
         interest = self.balance * self.interest_rate
         self.balance += interest
         print(f"30% interest: {interest}")
         print(f"New Balance with interest: {self.balance}\n")
-
-
+        return self.balance
 
 class StudentAccount(BankAccount):
     def withdraw(self, amount):
@@ -30,8 +31,6 @@ class StudentAccount(BankAccount):
         else:
             self.balance -= int(amount)
             print(f"New Balance after withdraw {self.balance}\n")
-            
-
 
 def main():
     name = input("Enter name: ")
@@ -60,4 +59,4 @@ def main():
     print("\nAdding interest\n")
     studAcct.add_interest(balance)
 
-main()
+main()    # <-comment out if irun ang exer10 para mag run unittest 
