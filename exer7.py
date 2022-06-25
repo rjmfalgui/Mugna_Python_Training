@@ -25,6 +25,7 @@ class BankAccount:
         return self.balance
 
 class StudentAccount(BankAccount):
+    
     def withdraw(self, amount):
         if int(amount) > 1000 or self.balance < int(amount):
             print("Withdraw amount too big")
