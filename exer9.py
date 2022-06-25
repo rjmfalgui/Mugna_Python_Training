@@ -2,11 +2,15 @@ class Error(Exception):
     pass
 
 class HexFormatError(Error):
-    ''' Will send error report if string does not fit with the format for hexadecimal '''
+    """
+    Will send error report if string does not fit with the format for hexadecimal
+    """
     pass
 
 class HexMemoryError(Error):
-    ''' Will send error report if input is more than 8 digits '''
+    """ 
+    Will send error report if input is more than 8 digits
+    """
     pass
 
 def hex_to_deci(userInput):
