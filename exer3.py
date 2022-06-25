@@ -1,4 +1,3 @@
-#Flames game
 name1, name2 = input("enter name 1: ").lower(), input("enter name 2: ").lower()
 n1 = name1.replace(" ", "")
 n2 = name2.replace(" ", "")
@@ -12,7 +11,6 @@ for letter in n1:
 for letter in n2:
     if letter in n1:
         count +=1
-#print(count)
 
 totalCount = count % 6
 
