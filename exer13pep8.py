@@ -51,12 +51,11 @@ class ThisIsStudentClass:
     def get_name(self):
         return self.LASTNAME, self.FIRSTNAME
 
-def another_function():
+def another_function(self):
     # This will do something. I promise.
     print(math.pi)
     sqrt_of_pi = sqrt(math.pi)
     print(f"It's the square root of pi, {sqrt_of_pi}")
-
     string_sample = 'Why, hello there!'
     print(string_sample[1::2])
     take_all_list(1, 2, 3)
