@@ -1,4 +1,4 @@
-def multiplicationTable(arg1, arg2=0): 
+def multiplication_table(arg1, arg2=0): 
     if arg1 == 0:
         arg2 = arg1
     
@@ -9,4 +9,4 @@ def multiplicationTable(arg1, arg2=0):
             cont.append(x * y)
         print(cont)
 
-multiplicationTable(5, 5)
+multiplication_table(5, 5)
