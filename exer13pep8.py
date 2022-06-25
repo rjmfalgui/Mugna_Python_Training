@@ -59,7 +59,6 @@ def another_function(self):
     string_sample = 'Why, hello there!'
     print(string_sample[1::2])
     take_all_list(1, 2, 3)
-
     try:
         l = 2; 
         m = 3; 
