@@ -1,5 +1,6 @@
 import time
 
+
 def time_decorator(func):
     def time_wrapper(*args, **kwargs):
         start_time = time.perf_counter()
